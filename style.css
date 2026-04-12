@@ -6,10 +6,13 @@
 }
 header{
     display: flex;
-    background-color: rgb(102, 147, 220);
+    background-color: rgb(255, 255, 255);
     height: 80px;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgb(148, 145, 148);
+    
+
 }
 .logo_container{
     margin-left: 4%;
@@ -24,7 +27,7 @@ nav{
     display: flex;
     /* gap: 20px; */
     min-width: 500px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 nav a{
     text-decoration: none;
@@ -64,7 +67,29 @@ nav a sup{
     flex-grow: 1;
     height: 40px;
     border: 0;
-     border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
 
    
+}
+.action_bar{
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+    padding-right: 40px;
+    font-weight: 300; 
+    
+}
+.action_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+   
+   
+}
+.action_name{
+    font-size: 12px;
+    color: #282c3f;
+     font-style: bold; 
+    font-weight: 600; 
 }
