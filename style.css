@@ -8,10 +8,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sub-menu{
-    display: none;
-}
-
 li{
     list-style: none;
     padding: 10px;
@@ -46,6 +42,7 @@ header{
    max-width: 600px;
     display: flex;
     margin-left: 20px;
+    position: relative;
 }
 .menu-bar ul{
     display: flex;
@@ -109,36 +106,43 @@ header{
     font-weight: 550;
 }
 
-/* Sub-menu styles */
 
-ul li:hover .sub-menu{
-    display: block;
-    position: absolute;
-    background-color: #fefdfe;
-    width: 100%;
-    height: 300px;
-    margin-top: 10px;
-    border-top: 1px solid #fefdfe;
-    box-shadow: rgba(196, 188, 196, 0.35) 0px 5px 15px;
+/*SUB MENU */
+
+.menu-bar ul li{
+    position:relative;
 }
 
-ul li {
-    position: relative;
-    list-style: none;
-    padding-bottom: 10px; 
+.sub-menu{
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:1135px;
+    min-height:500px;
+
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+
+    background:#fff;
+
+    padding:25px 30px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
+    border-top:1px solid #ececec;
+
+    z-index:999;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.25s;
 }
 
-ul li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    background: #ff00ff;
-    transition: 0.3s;
+.menu-bar ul li:hover>.sub-menu{
+    opacity:1;
+    visibility:visible;
 }
 
-ul li:hover::after {
-    width: 100%;
-}
+
