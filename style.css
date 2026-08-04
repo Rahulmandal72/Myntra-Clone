@@ -54,113 +54,11 @@ img {
 /*=================================================*/
 
 
-/* ================= MEGA MENU DROPDOWN ================= */
-
-.menu-bar ul li {
-  position: static;
-}
-
-.menu-bar ul li:hover .sub-menu {
-  display: flex;
-}
-
-.sub-menu {
+.sub-menu{
   display: none;
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  border-top: 1px solid #eaeaea;
-  padding: 30px 40px;
-  gap: 40px;
-  z-index: 100;
-  align-items: flex-start;
 }
 
-.sub-menu-heading {
-  display: flex;
-  flex-direction: column;
-  min-width: 160px;
-}
 
-.sub-menu-heading .item-heading1 {
-  font-family: "Assistant", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: #ff3f6c;
-  text-transform: capitalize;
-  padding-bottom: 12px;
-  margin-bottom: 12px;
-  border-bottom: 1px solid #efefef;
-  line-height: normal;
-}
 
-/* headings with no sub-list (e.g. Plus Size, Watches) */
-.sub-menu-heading > a.item-heading1:only-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.sub-menu-heading ul {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.sub-menu-heading ul li a {
-  font-family: "Assistant", sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: normal;
-  color: #282c3f;
-  text-transform: capitalize;
-}
-
-.sub-menu-heading ul li a:hover {
-  color: #ff3f6c;
-}
-
-/* Studio dropdown (different layout) */
-.studio-menu {
-  flex-direction: column;
-  align-items: flex-start;
-  width: 320px;
-  left: auto;
-  right: 40px;
-  padding: 20px;
-}
-
-.studio-menu h1 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #282c3f;
-  margin-bottom: 6px;
-}
-
-.studio-menu p {
-  font-size: 13px;
-  color: #7e818c;
-  margin-bottom: 14px;
-}
-
-.studio-menu img {
-  width: 100%;
-  margin: 0 0 14px 0;
-  border-radius: 4px;
-}
-
-.studio-menu button {
-  background-color: #ff3f6c;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
 
 
