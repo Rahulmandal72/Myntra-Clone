@@ -53,12 +53,76 @@ img {
 
 /*=================================================*/
 
-
-.sub-menu{
-  display: none;
+.menu-bar ul li{
+    position: relative;
 }
 
 
+.sub-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -80px;
+
+    width: 1120px;
+    min-height: 520px;
+
+    background: #fff;
+    border: 1px solid #ececec;
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
+
+    padding: 30px;
+
+    z-index: 999;
+
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 40px;
+    row-gap: 18px;
+}
 
 
+.menu-bar ul li:hover .sub-menu{
+    display: grid;
+}
 
+
+.sub-menu-heading{
+    width: 100%;
+}
+
+.sub-menu-heading ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sub-menu-heading ul li{
+    list-style: none;
+    margin: 7px 0;
+}
+
+
+.sub-menu-heading ul li a{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4e3838;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.sub-menu-heading ul li a:hover{
+    font-weight: 700;
+}
+
+
+.sub-menu-heading ul{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ff0000;
+}
+
+.sub-menu-heading:last-child ul{
+    border-bottom: none;
+}
