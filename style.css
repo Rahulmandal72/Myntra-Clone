@@ -12,10 +12,6 @@ a {
   text-decoration: none;
 }
 
-.side-area {
-  display: flex; /* remove later*/
-}
-
 /*=============HEADER==============*/
 header {
   display: flex;
@@ -28,7 +24,7 @@ header {
 }
 
 .logo-container {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .logo {
   width: 79px;
@@ -44,13 +40,9 @@ header {
   align-items: center;
 }
 
-#new {
-  color: #ff0000;
-  font-size: 10px;
-}
 
-/*==========sub-menu1==============*/
 
+/*==========MEN==============*/
 
 .menu-heading1 {
   font-size: 14px;
@@ -58,7 +50,6 @@ header {
   font-weight: 700;
   color: #4e4848;
   padding-bottom: 31px;
-  padding-right: 10px;
 }
 .firstli {
   position: relative;
@@ -239,20 +230,17 @@ header {
   margin-bottom: 20px;
 }
 
-/*===========================*/
-/*==========sub-menu2==============*/
+/*==========WOMEN==============*/
 .menu-heading2 {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4e4848;
   padding-bottom: 31px;
-  padding-right: 10px;
 }
 .secondli {
   position: relative;
 }
-
 
 .sub-menu2 {
   display: none;
@@ -272,11 +260,11 @@ header {
 }
 
 .secondli:hover .menu-heading2 {
-  border-bottom: 5px solid orangered;
+  border-bottom: 5px solid #ff1489;
 }
 
 .item-heading2 {
-  color: #ff0000a9;
+  color: #ff1489;
   font-size: 13px;
   font-weight: 600;
 }
@@ -361,7 +349,6 @@ header {
 }
 
 .secondli .col2 .box2 {
-  
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -415,19 +402,17 @@ header {
   margin-bottom: 20px;
 }
 
-/*==========menu3=================*/
+/*==========KIDS=================*/
 .menu-heading3 {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4e4848;
   padding-bottom: 31px;
-  padding-right: 20px;
 }
 .thirdli {
   position: relative;
 }
-
 
 .sub-menu3 {
   display: none;
@@ -447,11 +432,11 @@ header {
 }
 
 .thirdli:hover .menu-heading3 {
-  border-bottom: 5px solid orangered;
+  border-bottom: 5px solid #ff4400;
 }
 
 .item-heading3 {
-  color: #ff0000a9;
+  color: #ff4400;
   font-size: 13px;
   font-weight: 600;
 }
@@ -510,7 +495,6 @@ header {
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
-  
 }
 .thirdli .col2 .box1 ul {
   display: flex;
@@ -520,7 +504,6 @@ header {
   margin: 0;
   margin-top: 10px;
 }
-
 
 /*===============col3============*/
 
@@ -549,20 +532,17 @@ header {
   margin: 0;
 }
 
-/*===========================*/
-/*==========menu4=================*/
+/*==========HOME=================*/
 .menu-heading4 {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4e4848;
   padding-bottom: 31px;
-  padding-right: 20px;
 }
 .fourli {
   position: relative;
 }
-
 
 .sub-menu4 {
   display: none;
@@ -582,11 +562,11 @@ header {
 }
 
 .fourli:hover .menu-heading4 {
-  border-bottom: 5px solid orangered;
+  border-bottom: 5px solid #ffc404;
 }
 
 .item-heading4 {
-  color: #ff0000a9;
+  color: #ffc404;
   font-size: 13px;
   font-weight: 600;
 }
@@ -675,7 +655,6 @@ header {
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
- 
 }
 .fourli .col2 .box2 ul {
   display: flex;
@@ -685,8 +664,6 @@ header {
   margin: 0;
   margin-top: 10px;
 }
-
-
 
 /*===============col3============*/
 
@@ -727,7 +704,7 @@ header {
   margin-bottom: 20px;
 }
 
-/*==========menu5=================*/
+/*==========BEAUTY=================*/
 
 .menu-heading5 {
   font-size: 14px;
@@ -735,12 +712,10 @@ header {
   font-weight: 700;
   color: #4e4848;
   padding-bottom: 31px;
-  padding-right: 20px;
 }
 .fifthli {
   position: relative;
 }
-
 
 .sub-menu5 {
   display: none;
@@ -760,11 +735,11 @@ header {
 }
 
 .fifthli:hover .menu-heading5 {
-  border-bottom: 5px solid orangered;
+  border-bottom: 5px solid #0073ff;
 }
 
 .item-heading5 {
-  color: #ff0000a9;
+  color: #0073ff;
   font-size: 13px;
   font-weight: 600;
 }
@@ -850,7 +825,6 @@ header {
   margin-top: 10px;
 }
 
-
 /*===============col3============*/
 
 .fifthli .col3 {
@@ -890,20 +864,19 @@ header {
   margin-bottom: 20px;
 }
 
-/*==================menu6===============*/
+/*==================GENZ===============*/
 
 .menu-heading6 {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4e4848;
+
   padding-bottom: 31px;
-  padding-right: 20px;
 }
 .sixthli {
   position: relative;
 }
-
 
 .sub-menu6 {
   display: none;
@@ -923,11 +896,11 @@ header {
 }
 
 .sixthli:hover .menu-heading6 {
-  border-bottom: 5px solid orangered;
+  border-bottom: 5px solid #0073ff;
 }
 
 .item-heading6 {
-  color: #ff0000a9;
+  color: #0073ff;
   font-size: 13px;
   font-weight: 600;
 }
@@ -1052,8 +1025,7 @@ header {
   margin-bottom: 20px;
 }
 
-/*===========menu7=====*/
-
+/*===========Studio=====*/
 
 .menu-heading7 {
   font-size: 14px;
@@ -1061,12 +1033,14 @@ header {
   font-weight: 700;
   color: #4e4848;
   padding-bottom: 31px;
-  padding-right: 20px;
+}
+#new {
+  color: #ff0000;
+  font-size: 10px;
 }
 .seventhli {
   position: relative;
 }
-
 
 .sub-menu7 {
   display: none;
@@ -1089,34 +1063,27 @@ header {
   border-bottom: 5px solid orangered;
 }
 
-
-.sub-menu7 .col1{
-
+.sub-menu7 .col1 {
   display: flex;
   flex-direction: column;
-   height: 400px;
+  height: 400px;
   width: 500px;
   align-items: center;
-  margin: 20px;  
-
-  
+  margin: 20px;
 }
 
-.sub-menu7 .col1 h1{
-  
-padding-bottom: 10px;
+.sub-menu7 .col1 h1 {
+  padding-bottom: 10px;
 }
-.sub-menu7 .col1 p{
-  
-padding-bottom: 10px;
+.sub-menu7 .col1 p {
+  padding-bottom: 10px;
 }
 
-.sub-menu7 .col1 img{
+.sub-menu7 .col1 img {
   width: 400px;
   padding-bottom: 10px;
-
 }
-.sub-menu7 .col1 button{
+.sub-menu7 .col1 button {
   width: 170px;
   height: 40px;
   font-weight: 700;
@@ -1124,5 +1091,61 @@ padding-bottom: 10px;
   background-color: transparent;
   border: 1px solid rgb(97, 94, 94);
   cursor: pointer;
+}
 
+/*============search bar ====*/
+
+.search-div {
+  /* align-items: center; */
+  margin-top: 20px;
+  width: 480px;
+  margin-left: 25px;
+  height: 40px;
+  background-color: #f5f5f6;
+  display: flex;
+  border: 1px solid #f5f5f6;
+  border-radius: 3px;
+}
+
+.search-div form {
+  display: flex;
+  width: 100%;
+}
+
+.search-div input {
+  width: 100%;
+  background-color: #f5f5f6;
+  outline: none;
+  border: none;
+  background: transparent;
+ 
+}
+.search-icon {
+  width: 40px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.search-div:focus-within {
+    background-color: #ffffff;
+}
+
+/*==============profile wishlist bag ===*/
+
+.side-area{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.side-area-text{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.side-area-text a{
+ color: #000;
+ font-size: 14px;
+ font-weight: 600;
+ 
 }
