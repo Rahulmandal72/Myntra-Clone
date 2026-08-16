@@ -11,11 +11,14 @@ li {
 a {
   text-decoration: none;
 }
+.mobile-menu-btn {
+    display: none;
+}
 
 /*=============HEADER==============*/
 header {
   display: flex;
-  min-width: 1200px;
+ width: 100%;
   min-height: 80px;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px;
@@ -28,19 +31,18 @@ header {
 }
 .logo {
   width: 79px;
-  height: 78px;
+  height: auto;
+  max-width: 100%;
 }
 .menu-bar {
-  display: flex;
-  margin-left: 40px;
+   display: flex;
+  margin-left: 20px;
 }
 .menu-bar ul {
   display: flex;
-  gap: 30px;
+   gap: clamp(15px, 2vw, 30px);
   align-items: center;
 }
-
-
 
 /*==========MEN==============*/
 
@@ -58,18 +60,25 @@ header {
 .sub-menu1 {
   display: none;
   position: absolute;
-  top: 100%;
-  left: -30px;
+   top: 100%;
   margin-top: 33px;
+  left: -30px;
+  
   background-color: #ffffff;
-  height: 450px;
-  width: 700px;
+  min-height: 450px;
+  height: auto;
+  width: min(700px, 95vw);
   z-index: 9999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .firstli:hover .sub-menu1 {
   display: flex;
+}
+.sub-menu1 > .col1,
+.sub-menu1 > .col2,
+.sub-menu1 > .col3 {
+  flex: 1;
 }
 
 .firstli:hover .menu-heading1 {
@@ -108,7 +117,7 @@ header {
   margin-left: 30px;
 }
 .col1 .box1 {
-  height: 230x;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -146,7 +155,7 @@ header {
 }
 
 .col2 .box1 {
-  height: 150px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -162,7 +171,7 @@ header {
 }
 
 .col2 .box2 {
-  height: 150px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -178,7 +187,7 @@ header {
 }
 
 .col2 .box3 {
-  height: 150px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -199,7 +208,7 @@ header {
   margin-left: 30px;
 }
 .col3 .box1 {
-  height: 225px;
+ height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -214,7 +223,7 @@ header {
 }
 
 .col3 .box2 {
-  height: 225px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
 }
@@ -249,8 +258,9 @@ header {
   left: -30px;
   margin-top: 33px;
   background-color: #ffffff;
-  height: 450px;
-  width: 700px;
+   min-height: 450px;
+  height: auto;
+  width: min(700px, 95vw);
   z-index: 9999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -295,7 +305,7 @@ header {
   margin-left: 30px;
 }
 .secondli .col1 .box1 {
-  height: 230x;
+ height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -310,7 +320,7 @@ header {
 }
 
 .secondli .col1 .box2 {
-  height: 220px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
 }
@@ -333,7 +343,7 @@ header {
 }
 
 .secondli .col2 .box1 {
-  height: 300px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -371,7 +381,7 @@ header {
   margin-left: 30px;
 }
 .secondli .col3 .box1 {
-  height: 225px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -386,7 +396,7 @@ header {
 }
 
 .secondli .col3 .box2 {
-  height: 225px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
 }
@@ -421,8 +431,9 @@ header {
   left: -30px;
   margin-top: 33px;
   background-color: #ffffff;
-  height: 450px;
-  width: 700px;
+   min-height: 450px;
+  height: auto;
+  width: min(700px, 95vw);
   z-index: 9999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -467,7 +478,7 @@ header {
   margin-left: 30px;
 }
 .thirdli .col1 .box1 {
-  height: 230x;
+height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -491,7 +502,7 @@ header {
 }
 
 .thirdli .col2 .box1 {
-  height: 350px;
+height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -513,7 +524,7 @@ header {
   margin-left: 30px;
 }
 .thirdli .col3 .box1 {
-  height: 225px;
+height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -551,8 +562,9 @@ header {
   left: -30px;
   margin-top: 33px;
   background-color: #ffffff;
-  height: 450px;
-  width: 700px;
+   min-height: 450px;
+  height: auto;
+ width: min(700px, 95vw);
   z-index: 9999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -597,7 +609,7 @@ header {
   margin-left: 30px;
 }
 .fourli .col1 .box1 {
-  height: 230x;
+ height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -612,7 +624,7 @@ header {
 }
 
 .fourli .col1 .box2 {
-  height: 220px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
 }
@@ -635,7 +647,7 @@ header {
 }
 
 .fourli .col2 .box1 {
-  height: 200px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -651,7 +663,7 @@ header {
 }
 
 .fourli .col2 .box2 {
-  height: 150px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -673,7 +685,7 @@ header {
   margin-left: 30px;
 }
 .fourli .col3 .box1 {
-  height: 250px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -688,7 +700,7 @@ header {
 }
 
 .fourli .col3 .box2 {
-  height: 225px;
+height: auto;
   text-align: left;
   margin-top: 10px;
 }
@@ -724,8 +736,9 @@ header {
   left: -30px;
   margin-top: 33px;
   background-color: #ffffff;
-  height: 450px;
-  width: 700px;
+   min-height: 450px;
+  height: auto;
+  width: min(700px, 95vw);
   z-index: 9999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -770,7 +783,7 @@ header {
   margin-left: 30px;
 }
 .fifthli .col1 .box1 {
-  height: 230x;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -794,7 +807,7 @@ header {
 }
 
 .fifthli .col2 .box1 {
-  height: 300px;
+ height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -810,7 +823,7 @@ header {
 }
 
 .fifthli .col2 .box2 {
-  height: 100px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -833,7 +846,7 @@ header {
   margin-left: 30px;
 }
 .fifthli .col3 .box1 {
-  height: 225px;
+ height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -848,7 +861,7 @@ header {
 }
 
 .fifthli .col3 .box2 {
-  height: 225px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
 }
@@ -885,8 +898,9 @@ header {
   left: -30px;
   margin-top: 33px;
   background-color: #ffffff;
-  height: 450px;
-  width: 700px;
+   min-height: 450px;
+  height: auto;
+  width: min(700px, 95vw);
   z-index: 9999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -931,7 +945,7 @@ header {
   margin-left: 30px;
 }
 .sixthli .col1 .box1 {
-  height: 230x;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -955,7 +969,7 @@ header {
 }
 
 .sixthli .col2 .box1 {
-  height: 150px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -971,7 +985,7 @@ header {
 }
 
 .sixthli .col2 .box2 {
-  height: 150px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -994,7 +1008,7 @@ header {
   margin-left: 30px;
 }
 .sixthli .col3 .box1 {
-  height: 225px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
   border-bottom: 1px solid slategray;
@@ -1009,7 +1023,7 @@ header {
 }
 
 .sixthli .col3 .box2 {
-  height: 225px;
+  height: auto;
   text-align: left;
   margin-top: 10px;
 }
@@ -1049,7 +1063,8 @@ header {
   left: -30px;
   margin-top: 33px;
   background-color: #ffffff;
-  height: 400px;
+  min-height: 450px;
+  height: auto;
   width: 500px;
   z-index: 9999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -1098,8 +1113,9 @@ header {
 .search-div {
   /* align-items: center; */
   margin-top: 20px;
-  width: 480px;
-  margin-left: 25px;
+    flex: 1;
+  max-width: 480px;
+   margin-left: 10px;
   height: 40px;
   background-color: #f5f5f6;
   display: flex;
@@ -1118,7 +1134,6 @@ header {
   outline: none;
   border: none;
   background: transparent;
- 
 }
 .search-icon {
   width: 40px;
@@ -1127,25 +1142,24 @@ header {
   align-items: center;
 }
 .search-div:focus-within {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 /*==============profile wishlist bag ===*/
 
-.side-area{
+.side-area {
   margin-left: 20px;
   display: flex;
   align-items: center;
 }
-.side-area-text{
+.side-area-text {
   margin: 10px;
   display: flex;
   flex-direction: column;
- 
 }
-.side-area-text a{
- color: #000;
- font-size: 14px;
- font-weight: 600;
- 
+.side-area-text a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
 }
+
