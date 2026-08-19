@@ -11,9 +11,7 @@ li {
 a {
   text-decoration: none;
 }
-.mobile-menu-btn {
-    display: none;
-}
+
 
 /*=============HEADER==============*/
 header {
@@ -1162,4 +1160,243 @@ height: auto;
   font-size: 14px;
   font-weight: 600;
 }
+/*=============== RESPONSIVE =================*/
 
+.mobile-menu-btn {
+    display: none;
+}
+
+
+/* ========================================
+   TABLET RESPONSIVE
+   769px - 1024px
+======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  header {
+    width: 100%;
+    min-width: 0;
+    min-height: 70px;
+    align-items: center;
+  }
+
+  .logo-container {
+    margin-left: 15px;
+  }
+
+  .logo {
+    width: 65px;
+  }
+
+  .menu-bar {
+    margin-left: 10px;
+  }
+
+  .menu-bar ul {
+    gap: 14px;
+  }
+
+  .menu-heading1,
+  .menu-heading2,
+  .menu-heading3,
+  .menu-heading4,
+  .menu-heading5,
+  .menu-heading6,
+  .menu-heading7 {
+    font-size: 11px;
+    padding-bottom: 25px;
+  }
+
+  .search-div {
+    flex: 1;
+    width: auto;
+    max-width: 250px;
+    margin-left: 10px;
+  }
+
+  .side-area {
+    margin-left: 8px;
+  }
+
+  .side-area-text {
+    margin: 5px;
+  }
+
+  .side-area-text a {
+    font-size: 11px;
+  }
+
+
+  /* Mega menu */
+
+  .sub-menu1,
+  .sub-menu2,
+  .sub-menu3,
+  .sub-menu4,
+  .sub-menu5,
+  .sub-menu6 {
+    width: min(700px, 95vw);
+    max-width: 95vw;
+    left: 0;
+    margin-top: 0;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  .col1,
+  .col2,
+  .col3 {
+    width: auto;
+    flex: 1;
+    min-width: 0;
+    margin-left: 10px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+   0px - 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+  /* ---------- HEADER ---------- */
+
+  header {
+    width: 100%;
+    min-width: 0;
+    height: 65px;
+    min-height: 65px;
+    padding: 0 12px;
+    align-items: center;
+  }
+
+
+  /* ---------- LOGO ---------- */
+
+  .logo-container {
+    margin-left: 5px;
+    flex-shrink: 0;
+  }
+
+  .logo {
+    width: 55px;
+    height: auto;
+  }
+
+
+  /* ---------- DESKTOP MENU HIDE ---------- */
+
+  .menu-bar {
+    display: none;
+  }
+
+
+  /* ---------- SEARCH ---------- */
+
+  .search-div {
+    flex: 1;
+    width: auto;
+    max-width: none;
+    height: 38px;
+    margin: 0 8px;
+  }
+
+  .search-div input {
+    font-size: 13px;
+    min-width: 0;
+  }
+
+  .search-icon {
+    width: 35px;
+    margin-left: 5px;
+  }
+
+
+  /* ---------- PROFILE / WISHLIST / BAG ---------- */
+
+  .side-area {
+    margin-left: auto;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .side-area-text {
+    margin: 0;
+  }
+
+  .side-area-text a {
+    font-size: 11px;
+  }
+
+
+  /* ---------- MEGA MENU HIDE ---------- */
+
+  .sub-menu1,
+  .sub-menu2,
+  .sub-menu3,
+  .sub-menu4,
+  .sub-menu5,
+  .sub-menu6,
+  .sub-menu7 {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .search-div {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+        padding: 0 15px;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .logo-container {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 55px;
+    }
+
+    .search-div {
+        display: none;
+    }
+
+    .side-area {
+        margin-left: auto;
+    }
+
+}
